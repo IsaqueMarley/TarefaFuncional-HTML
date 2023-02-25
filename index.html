@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTÓRICO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>HISTÓRICO da UFS</h1>
+    </header>
+    <main>
+
+        </div>
+        
+        <div class="card">
+            <div class="lineinput">
+                <label for="período"></label>
+                <input type="text" id="periodo" placeholder="Ano.Periodo">
+            </div>
+
+            <div class="lineinput">
+                <label for="codigo="></label>
+                <input type="text" id="codigo" placeholder="Código da Disciplina">
+            </div>
+
+            <div class="lineinput">
+                <label for="cargahoraria="></label>
+                <input type="text" id="cargahoraria" placeholder="Carga Horária">
+            </div>
+
+            <div class="lineinput">
+                <label for="freq="></label>
+                <input type="text" id="freq" placeholder="Frequência">
+            </div>
+
+            <div class="lineinput">
+                <label for="nota="></label>
+                <input type="text" id="nota" placeholder="Nota">
+            </div>
+            <div class="lineinput">
+                <h2 id="resultado"></h2>
+            </div>
+            <button onclick="historico.guardar()">GUARDAR</button>
+            <button onclick="historico.limpar()">LIMPAR CAIXAS</button>
+            <button onclick="historico.finalizar()">FINALIZAR</button>
+            <div class="title">
+                <h2>ㅤㅤㅤ</h2> 
+                <span>Lista de historico na UFS.</span>
+        </div>
+        <div class="content">
+            <table >
+                <thead>
+                    <th class="center" >Ano/Periodo</th>
+                    <th class="center">Codigo Disciplina</th>
+                    <th class="center">Carga Horária</th>
+                    <th class="center">Frequência</th>
+                    <th class="center">Nota</th>
+                    <th></th>
+                </thead>
+
+                <tbody id="tbody"></tbody>
+            </table>
+
+        </div>
+        <h2>ㅤㅤㅤ</h2>
+        <div class="content2">
+            <table >
+                <thead>
+                    <th class="center" >Carga Horária</th>
+                    <th class="center">Tempo de Curso</th>
+                    <th class="center">Média Geral Ponderada pela CH</th>
+                    <th class="center">Desvio Padrão</th>
+                    <th class="center">...</th>
+                    <th></th>
+                </thead>
+
+                <thead class="center"> Informações sobre seu histórico na UFS</thead>
+                <tbody id="tbody2"></tbody>
+            </table>
+
+        </div>
+
+        <h2>ㅤㅤㅤ</h2>
+        <div class="content3">
+            <table >
+                <thead>
+                    <th class="center" >Aprovações</th>
+                    <th class="center" >Reprovações</th>
+
+                </thead>
+
+                
+                <tbody id="tbody3"></tbody>
+            </table>
+
+        </div>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
